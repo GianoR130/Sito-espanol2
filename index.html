@@ -11,13 +11,19 @@
             padding: 0;
             background-color: #fff;
             color: #000;
+            padding-top: 80px; /* Per evitare che il contenuto venga coperto dall'header */
         }
         header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
             background-color: #f4f4f4;
+            z-index: 1000;
         }
         .logo {
             font-size: 24px;
@@ -39,6 +45,7 @@
             font-size: 36px;
             font-weight: bold;
         }
+        
         .products {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -79,13 +86,8 @@
 <body>
     <header>
         <div class="logo">CIRCUITOS EN EL MUNDO</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Donna</a>
-            <a href="#">Uomo</a>
-            <a href="#">Nuovi Arrivi</a>
-        </nav>
     </header>
+
     <div class="banner">España</div>
     
     <section class="products">
@@ -107,7 +109,7 @@
     </section>
 
     <div class="banner">Europa</div>
-
+    
     <section class="products">
         <div class="product">
             <img src="https://webp.gp.cdn.pxr.nl/news/2024/05/22/f8cb5c40c0e46b511a933b053496197d4202827a.jpg?width=1800" alt="Monaco street circuit">
@@ -127,25 +129,23 @@
     </section>
 
     <div class="banner">Sudamerica</div>
-
+    
     <section class="products">
         <div class="product">
-            <img src="https://webp.gp.cdn.pxr.nl/news/2024/05/22/f8cb5c40c0e46b511a933b053496197d4202827a.jpg?width=1800" alt="Monaco street circuit">
-            <p><strong>Circuito urbano de Mónaco</strong></p>
-            <p><a href="https://es.wikipedia.org/wiki/Gran_Premio_de_M%C3%B3naco" target="_self">Saber más</a></p>
+            <img src="https://www.isouthamerica.com/wp-content/uploads/2024/06/interlagos-f1-circuit-transfers.jpg" alt="Interlagos">
+            <p><strong>Autódromo José Carlos Pace</strong></p>
+            <p><a href="https://es.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace" target="_self">Saber más</a></p>
         </div>
         <div class="product">
-            <img src="https://www.dailysportscar.com/wp-content/uploads/2020/08/BGT-2020-Oulton-Park-Race-2-Start.jpg" alt="Oulton Park">
-            <p><strong>Oulton Park</strong></p>
-            <p><a href="https://es.wikipedia.org/wiki/Oulton_Park" target="_self">Saber más</a></p>
+            <img src="https://imgstock.stockproseries.com.br/noticias/6242bb57-0e56-4de9-8382-6c2243ae85b8_15798980022_37ac14d2da_o.jpg">
+            <p><strong>Ribeirão Preto street circuit</strong></p>
+            <p><a href="https://pt.wikipedia.org/wiki/Etapa_de_Ribeir%C3%A3o_Preto_da_Stock_Car_Brasil" target="_self">Saber más</a></p>
         </div>
         <div class="product">
-            <img src="https://jean-michel-ducasse.com/wp-content/uploads/2022/05/WTCR-Cayrolle-GP-Pau-2022-0466-scaled.jpg" alt="Pau Grand Prix">
-            <p><strong>Gran premio de Pau</strong></p>
-            <p><a href="https://es.wikipedia.org/wiki/Gran_Premio_de_Pau" target="_self">Saber más</a></p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/TC2000_2006_Santa_Fe.jpg/1200px-TC2000_2006_Santa_Fe.jpg" alt="Callejero de Santa Fe">
+            <p><strong>Callejero de Santa Fe 2007</strong></p>
+            <p><a href="https://es.wikipedia.org/wiki/Gran_Premio_de_Santa_Fe" target="_self">Saber más</a></p>
         </div>
     </section>
-</body>
-
 </body>
 </html>
