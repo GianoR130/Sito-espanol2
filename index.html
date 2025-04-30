@@ -81,6 +81,60 @@
             transform: scale(1.1);
             background-color: #555;
         }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Font moderno */
+            background-color: #f9f9f9; /* Sfondo più chiaro */
+            color: #333; /* Testo più leggibile */
+        }
+
+        header {
+            background-color: #333; /* Header scuro */
+            color: #fff; /* Testo bianco */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombreggiatura */
+        }
+
+        nav a {
+            color: #fff; /* Link bianchi */
+        }
+
+        .banner {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradiente */
+            color: #fff; /* Testo bianco */
+            text-transform: uppercase; /* Testo maiuscolo */
+            letter-spacing: 2px; /* Spaziatura tra lettere */
+        }
+
+        .products {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsive */
+        }
+
+        .product {
+            background: #fff; /* Sfondo bianco */
+            border-radius: 10px; /* Angoli arrotondati */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px); /* Effetto sollevamento */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombreggiatura più intensa */
+        }
+
+        .product img {
+            border-radius: 10px 10px 0 0; /* Angoli arrotondati solo in alto */
+        }
+
+        .product a {
+            background-color: #ff7e5f; /* Colore pulsante */
+            color: #fff; /* Testo bianco */
+            font-weight: bold;
+        }
+
+        .product a:hover {
+            background-color: #feb47b; /* Colore hover pulsante */
+        }
+
     </style>
 </head>
 <body>
@@ -112,7 +166,7 @@
     
     <section class="products">
         <div class="product">
-            <img src="https://webp.gp.cdn.pxr.nl/news/2024/05/22/f8cb5c40c0e46b511a933b053496197d4202827a.jpg?width=1800" alt="Monaco street circuit">
+            <img src="https://phantom-marca.unidadeditorial.es/ec33eb4d46c78d2e77acd27e6c1985a2/resize/1200/f/jpg/assets/multimedia/imagenes/2023/05/25/16850063154805.jpg" alt="Monaco street circuit">
             <p><strong>Circuito urbano de Mónaco</strong></p>
             <p><a href="https://es.wikipedia.org/wiki/Gran_Premio_de_M%C3%B3naco" target="_self">Saber más</a></p>
         </div>
@@ -147,5 +201,9 @@
             <p><a href="https://es.wikipedia.org/wiki/Gran_Premio_de_Santa_Fe" target="_self">Saber más</a></p>
         </div>
     </section>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>&copy; 2025 Circuitos en el Mundo. Todos los derechos reservados.</p>
+        <p> Lotito Andrea  -  Riccardo Gianotti</p>
+    </footer>
 </body>
 </html>
